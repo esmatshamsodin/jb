@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>basic2</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="max"></p>
+	<script>
+		function find(a,b,c,d){
+			 var s=[a,b,c,d];
+			 var i=0;
+			 var t=s.length;
+			 var max=0;
+			for( ; i<t;i++)
+			{
+				if(s[i]>max){
+					max=s[i];
+				}
+
+			}
+			return(max);
+		}
+		document.getElementById("max").innerHTML=find(-6,-21,0,-9);
+	</script>
+
+</body>
+</html>
