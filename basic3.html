@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>basic3</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+	
+	function show_prompt() {
+  var i = 0;
+  var sum = 0;
+
+  var repeat=prompt("how many numbers you have?");
+ 	var n =0;
+ 	n = parseInt(repeat);
+
+ 
+  do {
+  	
+  	
+    var number = prompt("Please Enter a Number");
+    sum += parseInt(number); 
+    i++;
+
+    document.write("Number: " + number);
+    document.write("<br>");
+
+  }
+  while (i < n);
+
+  document.write('Sumation of scores : ' + sum );
+}
+show_prompt();
+		
+		</script>
+
+</body>
+</html>
