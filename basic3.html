@@ -9,33 +9,17 @@
 <body>
 	<script>
 	
-	function show_prompt() {
-  var i = 0;
-  var sum = 0;
+	function radian() {
+ var degree=prompt("please insert the degree=");
+ var d=degree;
+var rad=d*(Math.PI/180);
+return("your degree is = " +rad);
 
-  var repeat=prompt("how many numbers you have?");
- 	var n =0;
- 	n = parseInt(repeat);
+  }  
 
+  
+radian();
  
-  do {
-  	
-  	
-    var number = prompt("Please Enter a Number");
-    sum += parseInt(number); 
-    i++;
-
-    document.write("Number: " + number);
-    document.write("<br>");
-
-  }
-  while (i < n);
-
-  document.write('Sumation of scores : ' + sum );
-}
-show_prompt();
-		
-		</script>
-
+</script>
 </body>
 </html>

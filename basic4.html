@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>basic4</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="toup"></p>
+	<script>
+
+		function changtoup(string) 
+{
+	
+    var array1 = string.split(' ');
+  var newarray1 = [];
+    
+  for(var i = 0; i < array1.length; i++){
+      newarray1.push(array1[i].charAt(0).toUpperCase()+array1[i].slice(1));
+  }
+  return newarray1.join(' ');
+}
+	document.getElementById("toup").innerHTML=changtoup("my name is esmat");
+	</script>
+</body>
+</html>
